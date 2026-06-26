@@ -1,0 +1,214 @@
+{
+  "_meta": {
+    "popis": "Databaze velkych popularnich tuzemskych cestovnich kancelari a agregatoru pro vyber rodinne dovolene k mori.",
+    "vytvoreno": "2026-06-26",
+    "kriteria_vyberu": "Velke a zname CK s leteckymi/autobusovymi zajezdy k mori, ktere typicky odletaji i z Brna a Ostravy.",
+    "poznamka": "Pole 'odlety_brno_ostrava' a 'destinace' jsou na zaklade dlouhodobe nabidky techto CK. Aktualni terminy, ceny a presna odletova letiste se overi a doplni v kroku 2 (scraping).",
+    "parametry_zadani": {
+      "osoby": "2 dospeli + 2 deti (5 a 8 let)",
+      "typ": "k mori",
+      "vylouceno": "Egypt",
+      "rozpocet_kc": 60000,
+      "rozpocet_vyklad": "orientacni strop celkem za rodinu",
+      "odlet": ["Brno", "Ostrava"],
+      "termin": "letni prazdniny (cervenec-srpen)",
+      "delka": "7-14 noci"
+    },
+    "legenda_typ": {
+      "touroperator": "Poradatel zajezdu (vlastni katalog, charterove lety).",
+      "agregator": "Porovnavac/prodejce zajezdu mnoha CK na jednom miste."
+    }
+  },
+  "cestovky": [
+    {
+      "id": "fischer",
+      "nazev": "CK Fischer",
+      "typ": "touroperator",
+      "web": "https://www.fischer.cz",
+      "zamereni": "Reckо, Turecko, Bulharsko, Spanelsko, Kypr, Itálie, exotika",
+      "odlety_brno_ostrava": true,
+      "rodinne_pobyty": true,
+      "poznamka": "Jeden z nejvetsich poradatelu v CR, soucast skupiny Travel Family."
+    },
+    {
+      "id": "eximtours",
+      "nazev": "EXIM Tours",
+      "typ": "touroperator",
+      "web": "https://www.eximtours.cz",
+      "zamereni": "Recko, Turecko, Bulharsko, Spanelsko, Tunisko, Kypr",
+      "odlety_brno_ostrava": true,
+      "rodinne_pobyty": true,
+      "poznamka": "Jeden z nejvetsich touroperatoru, siroka charterova sit."
+    },
+    {
+      "id": "cedok",
+      "nazev": "Cedok",
+      "typ": "touroperator",
+      "web": "https://www.cedok.cz",
+      "zamereni": "Recko, Turecko, Bulharsko, Spanelsko, Itálie, Kypr",
+      "odlety_brno_ostrava": true,
+      "rodinne_pobyty": true,
+      "poznamka": "Nejstarsi ceska CK, siroka nabidka pobytu u more."
+    },
+    {
+      "id": "bluestyle",
+      "nazev": "Blue Style",
+      "typ": "touroperator",
+      "web": "https://www.blue-style.cz",
+      "zamereni": "Recko, Turecko, Bulharsko, Spanelsko, Kanary",
+      "odlety_brno_ostrava": true,
+      "rodinne_pobyty": true,
+      "poznamka": "Velky poradatel zameren na pobyty u more, casto rodinne hotely."
+    },
+    {
+      "id": "alexandria",
+      "nazev": "Alexandria",
+      "typ": "touroperator",
+      "web": "https://www.alexandria.cz",
+      "zamereni": "Bulharsko, Recko, Turecko, Spanelsko",
+      "odlety_brno_ostrava": true,
+      "rodinne_pobyty": true,
+      "poznamka": "Silna v Bulharsku a Recku, oblibena u rodin."
+    },
+    {
+      "id": "firotour",
+      "nazev": "FIRO-tour",
+      "typ": "touroperator",
+      "web": "https://www.firotour.cz",
+      "zamereni": "Recko, Turecko, Spanelsko, Bulharsko, exotika",
+      "odlety_brno_ostrava": true,
+      "rodinne_pobyty": true,
+      "poznamka": "Zavedeny touroperator s leteckymi pobyty u more."
+    },
+    {
+      "id": "nevdama",
+      "nazev": "CK Nev-Dama",
+      "typ": "touroperator",
+      "web": "https://www.nev-dama.cz",
+      "zamereni": "Recko, Itálie, Chorvatsko, more i hory",
+      "odlety_brno_ostrava": true,
+      "rodinne_pobyty": true,
+      "poznamka": "Soucast skupiny Travel Family, rodinne zamerene pobyty."
+    },
+    {
+      "id": "kovotour",
+      "nazev": "CK Kovotour Plus",
+      "typ": "touroperator",
+      "web": "https://www.kovotour.cz",
+      "zamereni": "Chorvatsko, Cerna Hora, Recko (autobusem i letecky)",
+      "odlety_brno_ostrava": true,
+      "rodinne_pobyty": true,
+      "poznamka": "Ostravska CK, silna na Jadran, vyhodne pro rodiny z Moravy."
+    },
+    {
+      "id": "vitkovicetours",
+      "nazev": "Vitkovice Tours",
+      "typ": "touroperator",
+      "web": "https://www.ckvt.cz",
+      "zamereni": "Chorvatsko (autobusem i letecky)",
+      "odlety_brno_ostrava": true,
+      "rodinne_pobyty": true,
+      "poznamka": "Specialista na Chorvatsko, sidlo v Ostrave."
+    },
+    {
+      "id": "vtt",
+      "nazev": "CK VTT",
+      "typ": "touroperator",
+      "web": "https://www.vtt.cz",
+      "zamereni": "Chorvatsko, Itálie, Cerna Hora",
+      "odlety_brno_ostrava": true,
+      "rodinne_pobyty": true,
+      "poznamka": "Jadran autobusem i letecky, oblibena u rodin."
+    },
+    {
+      "id": "esotravel",
+      "nazev": "ESO travel",
+      "typ": "touroperator",
+      "web": "https://www.esotravel.cz",
+      "zamereni": "Exotika, Stredomori, pobyty u more",
+      "odlety_brno_ostrava": false,
+      "rodinne_pobyty": true,
+      "poznamka": "Spise drazsi/exotika, vetsina odletu z Prahy - overit relevanci."
+    },
+    {
+      "id": "invia",
+      "nazev": "Invia",
+      "typ": "agregator",
+      "web": "https://www.invia.cz",
+      "zamereni": "Vsechny destinace u more, nabidky stovek CK",
+      "odlety_brno_ostrava": true,
+      "rodinne_pobyty": true,
+      "poznamka": "Nejvetsi cesky agregator zajezdu, klicovy zdroj nabidek pro krok 2."
+    },
+    {
+      "id": "dovolena_cz",
+      "nazev": "Dovolena.cz",
+      "typ": "agregator",
+      "web": "https://www.dovolena.cz",
+      "zamereni": "Vsechny destinace u more, nabidky mnoha CK",
+      "odlety_brno_ostrava": true,
+      "rodinne_pobyty": true,
+      "poznamka": "Velky agregator, dobre filtry vc. odletoveho mesta a poctu deti."
+    },
+    {
+      "id": "zajezdy_cz",
+      "nazev": "Zajezdy.cz",
+      "typ": "agregator",
+      "web": "https://www.zajezdy.cz",
+      "zamereni": "Vsechny destinace u more, nabidky mnoha CK",
+      "odlety_brno_ostrava": true,
+      "rodinne_pobyty": true,
+      "poznamka": "Agregator s sirokou nabidkou last minute i first minute."
+    },
+    {
+      "id": "travelguru",
+      "nazev": "Travelguru (Pelikan)",
+      "typ": "agregator",
+      "web": "https://www.travelguru.cz",
+      "zamereni": "Zajezdy k mori vc. rodinnych pobytu",
+      "odlety_brno_ostrava": true,
+      "rodinne_pobyty": true,
+      "poznamka": "Agregator ze skupiny Pelikan/Dovolena.cz."
+    },
+    {
+      "id": "pelikan",
+      "nazev": "Pelikan.cz",
+      "typ": "agregator",
+      "web": "https://www.pelikan.cz",
+      "zamereni": "Letenky a zajezdy k mori, nabidky mnoha CK",
+      "odlety_brno_ostrava": true,
+      "rodinne_pobyty": true,
+      "poznamka": "Znamy online prodejce, soucast skupiny Pelikan/Dovolena.cz."
+    },
+    {
+      "id": "nadovolenou",
+      "nazev": "NaDovolenou.cz",
+      "typ": "agregator",
+      "web": "https://www.nadovolenou.cz",
+      "zamereni": "Zajezdy k mori, first/last minute, nabidky mnoha CK",
+      "odlety_brno_ostrava": true,
+      "rodinne_pobyty": true,
+      "poznamka": "Agregator s sirokou nabidkou pobytovych zajezdu."
+    },
+    {
+      "id": "ckmarcopolo",
+      "nazev": "CK Marco Polo Int.",
+      "typ": "agregator",
+      "web": "https://www.ckmarcopolo.cz",
+      "zamereni": "Prodej zajezdu mnoha poradajicich CK",
+      "odlety_brno_ostrava": true,
+      "rodinne_pobyty": true,
+      "poznamka": "Zavedeny prodejce zajezdu vice CK."
+    },
+    {
+      "id": "akcni_ceny",
+      "nazev": "Akcni-ceny.com",
+      "typ": "agregator",
+      "web": "https://www.akcni-ceny.com",
+      "zamereni": "Porovnavac zajezdu k mori, first/last minute",
+      "odlety_brno_ostrava": true,
+      "rodinne_pobyty": true,
+      "poznamka": "Porovnavac nabidek vice CK s cenovymi filtry."
+    }
+  ]
+}
